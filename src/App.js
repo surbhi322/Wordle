@@ -23,7 +23,7 @@ function App(){
  
   useEffect(()=>{
     generateWordSet().then((words) => {
-       console.log(words)
+       //console.log(words)
       setWordSet(words.wordSet)
       setCorrectWord(words.todaysWord)
     })
