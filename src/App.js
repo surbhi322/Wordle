@@ -51,6 +51,7 @@ function App(){
     for(let i =0 ; i< 5; i++){
       currWord += board[currAttempt.attemp][i];
     }
+    console.log(wordSet)
     if(wordSet.has(currWord.toLowerCase())){
       setCurrentAttempt({attemp: currAttempt.attemp + 1, letterPos: 0});  
     }else{
